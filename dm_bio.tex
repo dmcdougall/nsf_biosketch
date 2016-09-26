@@ -1,8 +1,14 @@
 \def\pist#1#2{\noindent\hangindent 2em\hangafter1\hbox to 2em{#1\hfil~~}#2}
 
 \documentclass[11pt]{article}
+\usepackage{url}
+\usepackage{parskip}
 \usepackage{vmargin}
 \setmarginsrb{1.25in}{1.25in}{1.25in}{1.25in}{12pt}{25pt}{12pt}{30pt}
+\usepackage[numbers]{natbib}
+\bibliographystyle{unsrtnat}
+\renewcommand\refname{\vskip -1.5cm}
+\renewcommand{\bibnumfmt}[1]{}
 \pagestyle{empty}
 \begin{document}
 \begin{center}{\bf\large Damon McDougall}
@@ -19,10 +25,10 @@ Austin, TX 78712-1229
 phone: 512-232-5521\\
 email: damon@ices.utexas.edu} \vskip 0.2in
 
-\noindent {\bf Professional preparation}\vspace{.1in}\\
-University of Warwick, Coventry, UK, Mathematics, MMath, 2008.\\
+\noindent {\bf Professional Preparation}\vspace{.1in}\\
+UT Austin, Texas, USA, Computational Engineering, 2012--2014.\\
 University of Warwick, Coventry, UK, Mathematics, Ph.D., 2012.\\
-UT Austin, Texas, USA, Computational Engineering, 2012--2014.
+University of Warwick, Coventry, UK, Mathematics, MMath, 2008.
 
 \vspace{.1in}
 \noindent{\bf Appointments}\vspace{.1in}\\
@@ -30,9 +36,8 @@ UT Austin, Texas, USA, Computational Engineering, 2012--2014.
 
 \vspace{.1in} \noindent {\bf  Products related to proposed work}\vspace{.1in}
 
-D.\ McDougall, N.\ Malaya, R.\ D.\ Moser
-\newblock The Parallel C++ Statistical Library for Bayesian Inference: QUESO
-\newblock {\em Springer Handbook of Uncertainty Quantification\/}, submitted, 2014.
+\nocite{McDougall2016}
+\bibliography{products}
 
 \vspace{.1in} \noindent {\bf Other significant products}\vspace{.1in}
 
@@ -46,8 +51,9 @@ None.
 
 \noindent
 \begin{itemize}
-\item Lead maintainer of open source software \texttt{QUESO} for large-scale
+\item Maintainer of open source software \texttt{QUESO} for large-scale
   uncertainty quantification
+\item Organizer of Scientific Software Days 2016 conference
 \end{itemize}
 
 \noindent{\bf Collaborators and other affiliations}
